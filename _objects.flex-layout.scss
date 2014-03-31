@@ -1,0 +1,63 @@
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+
+$base-spacing-unit: 24px !default;
+
+/**
+ * Begin a layout group.
+ */
+.layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -$base-spacing-unit;
+}
+
+
+
+/**
+ * Reversed rendered order of layout items, e.g. items 1, 2, 3, 4 in your
+ * markup will display in order 4, 3, 2, 1 on your page.
+ */
+.layout--reverse {
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+
+
+/**
+ * Make the layout items fill up from the left, right, or center.
+ */
+.layout--left       { justify-content: flex-start; }
+.layout--center     { justify-content: center; }
+.layout--right      { justify-content: flex-end; }
+
+
+
+/**
+ * Align layout items to the vertical baseline, top, middle, or bottom of each other.
+ */
+.layout--baseline   { align-items: baseline; }
+.layout--top        { align-items: flex-start; }
+.layout--middle     { align-items: center; }
+.layout--bottom     { align-items: flex-end; }
+
+
+
+/**
+ * Distribute layout items with space around, or between them.
+ */
+.layout--around     { justify-content: space-around; }
+.layout--between    { justify-content: space-between; }
+
+
+
+.layout__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding-left: $base-spacing-unit;
+}

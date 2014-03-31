@@ -1,0 +1,20 @@
+{
+  "name": "objects.flex-layout",
+  "version": "0.1.0",
+  "authors": [
+    "Angus Fretwell <angusfretwell@me.com>"
+  ],
+  "description": "Flexbox-based grid layout abstraction.",
+  "main": "_objects.flex-layout.scss",
+  "keywords": [
+    "css",
+    "oocss"
+  ],
+  "license": "Apache",
+  "homepage": "http://github.com/angusfretwell/objects.flex-layout",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+  ]
+}
