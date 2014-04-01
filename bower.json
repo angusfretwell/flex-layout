@@ -1,5 +1,5 @@
 {
-  "name": "objects.flex-layout",
+  "name": "flex-layout",
   "version": "0.1.0",
   "authors": [
     "Angus Fretwell <angusfretwell@me.com>"
@@ -11,7 +11,7 @@
     "oocss"
   ],
   "license": "Apache",
-  "homepage": "http://github.com/angusfretwell/objects.flex-layout",
+  "homepage": "http://github.com/angusfretwell/flex-layout",
   "ignore": [
     "**/.*",
     "node_modules",
