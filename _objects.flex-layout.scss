@@ -1,29 +1,30 @@
 /*------------------------------------*\
-    #LAYOUT
+  #LAYOUT
 \*------------------------------------*/
 
-$base-spacing-unit: 24px !default;
+$inuit-base-spacing-unit: 24px !default;
 
 /**
  * Begin a layout group.
  */
+.l,
 .layout {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: -$base-spacing-unit;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: -$inuit-base-spacing-unit;
 }
 
-    /**
-     * Apply widths (possibly within media queries) to items to build a layout.
-     */
-    .layout__item {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        box-sizing: border-box;
-        padding-left: $base-spacing-unit;
-    }
+  /**
+   * Apply widths (possibly within media queries) to items to build a layout.
+   */
+  .l__item,
+  .layout__item {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    padding-left: $inuit-base-spacing-unit;
+  }
 
 
 
@@ -31,9 +32,10 @@ $base-spacing-unit: 24px !default;
  * Reversed rendered order of layout items, e.g. items 1, 2, 3, 4 in your
  * markup will display in order 4, 3, 2, 1 on your page.
  */
+.l--reverse,
 .layout--reverse {
-    flex-direction: row-reverse;
-    flex-wrap: wrap-reverse;
+  flex-direction: row-reverse;
+  flex-wrap: row-reverse;
 }
 
 
@@ -41,24 +43,24 @@ $base-spacing-unit: 24px !default;
 /**
  * Make the layout items fill up from the left, right, or center.
  */
-.layout--left       { justify-content: flex-start; }
-.layout--center     { justify-content: center; }
-.layout--right      { justify-content: flex-end; }
+.l--left, layout--left      { justify-content: flex-start; }
+.l--center, layout--center  { justify-content: center; }
+.l--right, layout--right    { justify-content: flex-end; }
 
 
 
 /**
  * Align layout items to the vertical baseline, top, middle, or bottom of each other.
  */
-.layout--baseline   { align-items: baseline; }
-.layout--top        { align-items: flex-start; }
-.layout--middle     { align-items: center; }
-.layout--bottom     { align-items: flex-end; }
+.l--baseline, layout--baseline  { align-items: baseline; }
+.l--top, layout--top            { align-items: flex-start; }
+.l--middle, layout--middle      { align-items: center; }
+.l--bottom, layout--bottom      { align-items: flex-end; }
 
 
 
 /**
  * Distribute layout items with space around, or between them.
  */
-.layout--around     { justify-content: space-around; }
-.layout--between    { justify-content: space-between; }
+.l--around, layout--around    { justify-content: space-around; }
+.l--between, layout--between  { justify-content: space-between; }
