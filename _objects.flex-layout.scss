@@ -20,7 +20,6 @@ $inuit-base-spacing-unit: 24px !default;
    */
   .l__item,
   .layout__item {
-    float: left;
     display: flex;
     flex-direction: column;
     padding-left: $inuit-base-spacing-unit;
